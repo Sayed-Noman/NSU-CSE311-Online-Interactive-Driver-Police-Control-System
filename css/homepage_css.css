@@ -1,0 +1,919 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif ;
+   background-color: #0a1e29;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/**************Header Section Style Start****************/
+
+/*--importing  google fonts--*/
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+section{
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+}
+.page-wrapper{
+    height: 610px;
+    width: 1360px;
+}
+.page-wrapper header{
+    height: 60px;
+    width: 1360px;
+    background-color:#0a1e29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.page-wrapper header li,a,button{
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.page-wrapper header .logo-header a{
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.page-wrapper .nav-container .navbar_links{
+    list-style: none;
+   
+}
+.page-wrapper header .navbar_links li{
+    display:inline-block;
+    padding: 0px 20px;
+    
+}
+.page-wrapper header  .navbar_links li a{
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+   
+}
+.page-wrapper header .navbar_links li a:hover{
+    color: #00b0ff;
+}
+
+.page-wrapper header .contact-btn button{
+     padding: 9px 25px;
+     background-color: #00b0ff;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+} 
+.page-wrapper header .contact-btn button:hover{
+    background-color:  #0089c9;
+ 
+}
+
+/***************HeaderSection Style End**************/
+
+/***************Login Section style Start**************/
+.loigin-section{
+    margin-top: 10px;
+}
+
+.login_page_container{
+    width: 1360px;
+    height: 570px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+    background-image: url("");
+    background-size: cover;
+}
+.boy_with_car{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login_form_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+/*
+.boy_with_car img{
+    
+    width: 300px;
+    overflow: hidden;
+}
+*/
+form{
+    width: 360px;
+}
+.profile_avatar_image{
+    padding-top: 5px;
+    height: 100px;
+    overflow: hidden;
+}
+form h2{
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.input-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+    width: 21.5rem;
+}
+.input-container.username{
+    margin-top: 0;
+}
+.icon-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-tag i{
+    color: #d9d9d9;
+    transition: .3s;
+}
+.input-container > div{
+    position: relative;
+    height: 45px;
+}
+.input-container > div h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(250, 243, 243);
+    font-size: 18px;
+    transition: .3s;
+}
+.input-container:before,.input-container:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #00b0ff;
+    transition: .3s;
+}
+.input-container:before{
+    right: 50%;
+}
+.input-container:after{
+    left: 50%;
+}
+.input-container.focus:before,.input-container.focus:after{
+    width: 50%;
+}
+.input-container.focus>div>h5{
+    top: -5px;
+    font-size: 15px;
+
+}
+.input-container.focus>.icon-tag>i{
+    color:#00b0ff;
+}
+.input-container>div>input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: rgb(245, 238, 238);
+    font-family: 'poppins',sans-serif;
+}
+.input-container.password{
+    margin-bottom: 4px;
+}
+
+.forget_pass_link {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(247, 241, 241);
+    font-size: 0.9rem;
+    transition: .3s;
+}
+.register_account_link {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.0rem;
+    transition: .3s;
+}
+a:hover{
+    color: #00b0ff;
+}
+.login_btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right,#00b0ff,#40c0fc,#00b0ff);
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'poppins',sans-serif;
+    background-size: 200%;
+    transition: .5s;
+}
+.login_btn:hover{
+    background-position: right;
+}
+
+/***************Login Section Style End**************/
+/***************Footer Section Style Start**************/
+/*.page-wrapper footer{
+    height: 70px;
+    width: 1350px;
+    background-color:#0a1e29;
+    padding: 20px 10%;
+} */
+section{
+    width: 50%;
+    height: 150vh;
+    background-size: cover;
+}
+/*clock section css */
+#clock h2
+{
+    position: absolute;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+    
+}
+#clock #time{
+    display: flex;
+    justify-content: center;
+}
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradiant(transparent,#0004);
+}
+#clock #time div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #2196f3;
+    color:#fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(253, 251, 251, 0.2);  /*rgba(0,0,0,.2);*/
+}
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+}
+#clock #time div:nth-last-child(2) span{
+    background: #161013;
+}
+
+
+#clock #time div:nth-last-child(2) span:nth-child(2){
+    background: #201c1e;
+}
+#clock #time div:nth-last-child(1) span{
+    position: absolute;
+    bottom: 0;
+    width:60px;
+    height:40px;
+    font-size: 1.5em;
+    background:#84caff;
+    color:#000;
+    -webkit-box-reflect: below 1px linear-gradiant(transparent,#0004);
+}
+/*fb,tw,yt starts from here */
+.middle{
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+.box{
+  width: 320px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(10, 10, 10, 0.3);
+}
+
+.box .heading{
+  background: #3498db;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+}
+
+.faqs{
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+  float: right;
+  margin-top: 3px;
+}
+
+details{
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-family: "Rubik";
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary{
+  outline: none;
+}
+/* Sevice policy box starts from here */
+/*cent is used to set the service box in it's position*/
+#cent {
+    position:absolute;
+    top:240%;
+    left:19%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-100px; /*this is half of width of your div*/
+  }
+  .container {
+
+    width: 1000px;
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    justify-content: space-between;
+    
+  
+  }
+  
+  
+  
+  .s-box {
+  
+    position: relative;
+  
+    width: 300px;
+  
+    height: 400px;
+  
+    background: #000;
+  
+    box-shadow: 0 30px 30px rgba(114, 112, 112, 0.2);;
+  
+  }
+  
+  .s-box .imgBx img {
+  
+    position: absolute;
+  
+    top: 0;
+  
+    left: 0;
+  
+    width: 100%;
+  
+    height: 100%;
+  
+    object-fit: cover;
+  
+    transition: 0.5s;
+  
+  }
+  
+  
+  
+  .s-box:hover .imgBx img {
+  
+    opacity: 0;
+  
+  }
+  
+  
+  
+  .s-box .content {
+  
+    position: absolute;
+  
+    bottom: 20px;
+  
+    left: 10%;
+  
+    width: 80%;
+  
+    height: 60px;
+  
+    background: #00b0ff;
+  
+    transition: 0.5s;
+  
+    overflow: hidden;
+  
+  
+  
+    padding: 15px;
+  
+    box-sizing: border-box;
+    
+  
+  }
+  
+  
+  
+  .s-box:hover .content {
+  
+    width: 100%;
+  
+    height: 100%;
+  
+    bottom: 0;
+  
+    left: 0;
+  
+  }
+  
+  
+  
+  .s-box .content h3 {
+  
+    margin: 0;
+  
+    padding: 0;
+  
+    font-size: 20px;
+  
+  }
+  
+  
+  
+  .s-box .content p {
+  
+    margin: 10px 0 0;
+  
+    padding: 0;
+  
+    opacity: 0;
+  
+    line-height: 1.2em;
+  
+    transition: 0.5s;
+  
+    text-align: justify;
+  
+  }
+  
+  
+  
+  .s-box:hover .content p {
+  
+    opacity: 1;
+  
+    transition-delay: 0.5s;
+  
+  }
+  h1{
+    text-align: left;
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+  }
+   h2{
+    color: white;
+   }
+  /*Animation text starts from here*/
+  .con{
+    height: 80px;
+    width: 1360px;
+    background-color:#03a9f4;
+  }
+  
+  .cont {
+    color: white;
+    height: 10vh;
+    /*display: flex;*/
+    justify-content: left;
+    align-items: center;
+    /*font-family: 'Poppins',sans-serif ;*/
+    /*font-family: 'Antic', sans-serif;*/
+    font: normal 36px 'Cookie', cursive;
+  }
+  .cont p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .cont p span.typed-text {
+    font-weight: normal;
+    color: #f5eeee;
+    /*font-family: 'Poppins',sans-serif ;*/
+    font: normal 36px 'Cookie', cursive;
+  }
+  .cont p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .cont p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+  
+   /* footer css starts from here*/
+footer{
+	position: fixed;
+	bottom: 0;
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: #06141b;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #faf9f8;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #1cb2e0;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #c2c7c7;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #0a1e29;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+/*table css*/
+.content-table {
+  border-collapse: collapse;
+  margin: 200px;
+  font-size: 0.9em;
+  min-width: 900px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 244, 244, 0.849);
+  justify-content: center;
+
+}
+
+.content-table thead tr {
+  background-color: #131313;
+  color: #0c0c0c;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  color: #fafcfc; /*text color*/
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #fcfdfd;
+  
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #16bbd8;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00b0ff;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/*click regsiter and login button buttons*/
+.buttons button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin:  50px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #03a9f4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+ 
+}
+.buttons button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+.buttons button:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+.buttons button:first-child:before,
+.buttons button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.buttons button:first-child:hover:before,
+.buttons button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+
+.buttons button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+.buton-area{
+  height: 650px;
+    width: 1360px;
+    background-color:#77bdff;
+    justify-content: center;
+}

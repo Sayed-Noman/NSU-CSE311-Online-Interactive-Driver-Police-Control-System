@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+body{
+    
+    /*background: linear-gradient(to left,#191919,#191919);*/
+    background: linear-gradient(to left,#e4d2d2,#e4c7c7);
+    justify-content: center;
+    align-items: center;
+}
+/**************Header Section Style Start****************/
+
+/*--importing  google fonts--*/
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+.page-wrapper{
+    height: 610px;
+    width: 1360px;
+}
+.page-wrapper header{
+    height: 60px;
+    width: 1360px;
+    background-color:#0a1e29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.page-wrapper header li,a,button{
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.page-wrapper header .logo-header a{
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.page-wrapper .nav-container .navbar_links{
+    list-style: none;
+   
+}
+.page-wrapper header .navbar_links li{
+    display:inline-block;
+    padding: 0px 20px;
+    
+}
+.page-wrapper header  .navbar_links li a{
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+   
+}
+.page-wrapper header .navbar_links li a:hover{
+    color: #00b0ff;
+}
+
+.page-wrapper header .contact-btn button{
+     padding: 9px 25px;
+     background-color: #00b0ff;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+} 
+.page-wrapper header .contact-btn button:hover{
+    background-color: #438fff;
+ 
+}
+
+/***************HeaderSection Style End**************/
+
+/***************Login Section style Start**************/
+.loigin-section{
+    margin-top: 10px;
+}
+
+.login_page_container{
+    width: 1360px;
+    height: 800px;
+}
+
+
+/* staart from here*********/
+
+.registration-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+ 
+ h3{
+     color:  white;
+     text-transform: uppercase lowercase;  
+ }
+ h4{
+     color:  white;
+     text-transform: uppercase lowercase; 
+ }
+ h5{
+     color:  white;
+     text-transform: uppercase lowercase;
+ }
+ .container{
+     width: 800px;
+     padding: 20px;  
+ }
+ .container h2{
+     width: 100%;
+      color:  white;
+     font-size: 36px;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ .container .row100{
+     position: relative;
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
+ }
+ .container .row100 .col{
+     position: relative;
+     width: 100%;
+     padding: 0 10px;
+     margin: 30px 0 10px; 
+     transition: 0.5s;
+ }
+ .container .row100 .inputBox{
+     position: relative;
+     width: 100%;
+     height: 40px;
+     color:  white;
+     
+ }
+ .container .row100 .inputBox input,
+ .container .row100 .inputBox.textarea textarea
+ {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     box-shadow: none;
+     border: none;
+     outline: none;
+     font-size: 18px;
+     padding: 0 10px;
+     z-index: 1;
+     color:  #000;
+ }
+ .container .row100 .inputBox  .shorten-input,
+ .container .row100 .inputBox .line.shorten-line
+ {
+     width:500px;
+ }
+ 
+ .container .row100 .inputBox .text{
+     position: absolute;
+     top:0;
+     left:0;
+     line-height: 40px;
+     font-size: 18px;
+     padding: 0 10px;
+     display: block;
+     transition: 0.5s;
+     pointer-events: none;
+ }
+ .container .row100 .inputBox input:focus + .text,
+ .container .row100 .inputBox input:valid + .text
+ {
+     top: -35px;
+     left: -10px;
+ }
+ .container .row100 .inputBox .line{
+     position: absolute;
+     bottom: 0;
+     display: block;
+     width: 100%;
+     height: 2px;
+     background:  white;
+     transition: 0.5s;
+     border-radius: 2px;
+     pointer-events: none;
+ }
+ .container .row100 .inputBox input:focus ~ .line,
+ .container .row100 .inputBox input:valid ~ .line
+ {
+     height: 100%; 
+ }
+ h2{text-align: center;}
+ select{
+     appearance:none;
+     outline: none;
+     box-shadow: none;
+     background: #2c3e50;
+     border: 0 !important;
+ }
+ .select{
+     position: relative;
+     display: block;
+     width: 20em;
+     height: 3em;
+     background: #2c3e50;
+     overflow: hidden;
+     line-height: 3;
+     border-radius: .25em;
+ }
+ select{
+     width: 100%;
+     height:100%;
+     margin: 0;
+     padding: 0 0 0 .5em;
+     color: #fff;
+     font-size: 1em;
+     letter-spacing: .8px;
+     cursor: pointer;
+ }
+ .select::after{
+     content: '\25bc';
+     position: absolute;
+     top:0;
+     right: 0;
+     bottom: 0;
+     padding: 0 1em;
+     background: #34495e;
+     pointer-events: none;
+ }
+ .select:hover::after{
+     color: #31a3e4;
+ }
+ .select::after{
+     transition: 2s all ease;
+ }
+ .container .row100 .inputBox.textarea{
+     position: relative;
+     width: 100%;
+     height: 100px;
+     padding: 10px 0;
+ }
+ .container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize:  none;
+ }
+
+ .container .row100 .inputBox textarea:focus + .text,
+ .container .row100 .inputBox textarea:valid + .text
+ {
+     top: -35px;
+     left: -10px;
+ }
+ .container .row100 .inputBox textarea:focus ~ .line,
+ .container .row100 .inputBox textarea:valid ~ .line
+ {
+     height: 100%; 
+ }
+ input[type="submit"]{
+     border: none;
+     padding: 7px 35px;
+     cursor: pointer;
+     outline: none;
+     background:   #2c3e50;
+     color: white;
+     font-size: 18px;
+     border-radius: 2px;
+ }
+ #output_image
+ {
+  width: 450px;
+  height: 250px;
+  background-size: cover;
+  border: 1px solid black;
+
+ } 
+ #output
+ {
+    width: 450px;
+    height: 250px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+
+ /*--------Alert Box Design---------------*
+  /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  } 

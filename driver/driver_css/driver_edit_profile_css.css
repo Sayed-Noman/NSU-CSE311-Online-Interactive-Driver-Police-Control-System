@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+    
+}
+body{
+    background: #e1ecf2;
+}
+.wrapper{
+    margin: 10px;
+}
+.wrapper .top_navbar{
+    width: calc(100% - 20px);
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 10px;
+    z-index: 9999;/*to overcome scroll overlaping*/
+    
+}
+.wrapper .top_navbar .hamburger{
+    width: 70px;
+    height: 100%;
+    background: #2e4ead;
+    padding: 15px 17px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+}
+.wrapper .top_navbar .hamburger .side-menu-div{
+    width: 35px;
+    height: 4px;
+    background: #92a6e2;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.wrapper .top_navbar .top_menu{
+    width: calc(100% - 70px);
+    background: #fff;
+    height: 100%;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    
+}
+.wrapper .top_navbar .top_menu .logo{
+    color: #2e4ead;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+.wrapper .top_navbar .top_menu ul{
+    display: flex;
+}
+.wrapper .top_navbar .top_menu ul li a{
+    display: block;
+    font-weight: 520;
+    margin: 0 10px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border:  1px  1px solid #2e4ead;
+    align-items: center;
+    border-radius: 10%;
+    text-decoration: none;
+    transition: .1s;
+    
+}
+.wrapper .top_navbar .top_menu ul li a:hover{
+    background: #4360b5;
+    color: #fff;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    background: #2e4ead;
+    width: 200px;
+    height: calc(100% - 80px);
+    border-bottom-left-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  .wrapper .sidebar ul li a{
+      display: block;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 1px;
+      color: #92a6e2;
+      white-space: nowrap;/*for smooth sidebar collapsing*/
+  }
+  .wrapper .sidebar ul li a:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: #92a6e2;
+      display: none;
+
+  }
+.wrapper .sidebar ul li a span.icon{
+    display: inline-block;
+    margin-right: 10px;
+
+}
+.wrapper .sidebar ul li a span.title{
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    background: #4360b5;
+    color: #fff;
+}
+.wrapper .sidebar ul li a:hover:before
+.wrapper .sidebar ul li a.active:hover:before{
+    display: block;
+}
+
+.wrapper .main_container{
+    width: calc(100% - 200px);
+    margin-top: 70px;
+    margin-left: 200px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+.wrapper .buttons button{
+    padding: 7px 13px;
+    background-color: #2e4ead;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    color: white;
+    font-weight: 350;
+
+    
+  }
+  .wrapper .buttons button:hover{
+    background-color: #4360b5
+  }
+/*--------Main Page Container-------*/
+.wrapper .main_container .item{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.wrapper .main_container .item .table-container{
+    margin: 10px auto;
+    width: 95%;
+    
+}
+/*------------Colapsing Hamburger Menu+SideBar---------*/
+.wrapper.collapse .sidebar{
+    width: 70px;
+}
+.wrapper.collapse .sidebar ul li a{
+    text-align: center;
+}
+.wrapper.collapse .sidebar ul li a span.icon{
+    margin: 0;
+}
+.wrapper.collapse .sidebar ul li a span.title{
+    display: none;
+  }
+.wrapper.collapse .main_container{
+   width: calc(100% - 70px); 
+   margin-left: 70px;
+} 
+/*------------------------Table View/Accept/Delete Links  as Buuton-------------------------*/
+
+.action-link a:link, .action-link a:visited {
+    background-color: #2e4ead;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .action-link a:hover, .action-link a:active {
+    background-color:#4360b5;
+  }
+
+/*----------------------------------Modal View/Information-user----------------------------*/
+ /* The Modal (background) */
+  
+
+
+
+
+/* Search bar css starts from here*/ 
+.searchbar {
+    width: 800%;
+    max-width: 1050px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.searchbar--max-width {
+    max-width: 100%;
+}
+
+.searchbar__input {
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #2e4ead;
+    border-radius: 5px 0 0 5px;
+    background: #F4FAF9;
+    transition: background 0.25s, box-shadow 0.25s;
+}
+
+.searchbar__input:focus {
+    background: white;
+    box-shadow: 0 0 2px #8CC6BA;
+}
+
+.searchbar__input::placeholder {
+    color: #8CC6BA;
+}
+
+.searchbar__button {
+    width: 80px;
+    background: #2e4ead;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.searchbar__button:active {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+h2{
+    color: #2e4ead;
+    text-align: center;
+}
+h4{
+    color: #2e4ead;
+}
+h6{
+    color: #2e4ead;
+}
+/*Personal info starts from here*/
+
+
+.login-form,
+.login-form * {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+
+.login-form {
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.login-form__content {
+    padding: 30px;
+    background: #eeeeee;
+}
+
+.login-form__header {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333333;
+}
+
+.login-form__input {
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.login-form__input:focus {
+    border-color: #2e4ead;
+}
+
+.login-form__input::placeholder {
+    color: #000000;
+}
+
+.login-form__button {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__button:active {
+    background: #2e4ead;
+}
+
+
+/*NID image*/
+#output_image
+{
+ width: 450px;
+ height: 250px;
+ background-size: cover;
+ border: 1px solid black;
+
+} 
+#output
+{
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #nid_image_preview
+{
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #driving_license_image_preview
+{
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #car_image_preview
+{
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #car_document_image_preview
+{
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #profile_image_preview
+{
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+ #output2
+{
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    border: 1px solid black;
+ } 
+  /*submit buttons 1,2,3,4,5,6,7*/
+ .login-form__button1 {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__button1 :active {
+    background: #2e4ead;
+}
+.login-form__button2 {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__button2 :active {
+    background: #2e4ead;
+}
+.login-form__button3 {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__button3 :active {
+    background: #2e4ead;
+}
+.login-form__button4 {
+   
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.login-form__button4 :active {
+    background: #2e4ead;
+}
+.login-form__button5 {
+   
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.login-form__button5 :active {
+    background: #2e4ead;
+}
+.login-form__button6 {
+   
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.login-form__button6 :active {
+    background: #2e4ead;
+}
+.login-form__button7 {
+   
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #2e4ead;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.login-form__button7 :active {
+    background: #2e4ead;
+}

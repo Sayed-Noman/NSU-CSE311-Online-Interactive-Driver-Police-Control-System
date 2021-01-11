@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif ;
+    background-color: #0a1e29;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/**************Header Section Style Start****************/
+
+/*--importing  google fonts--*/
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+.page-wrapper{
+    height: 610px;
+    width: 1360px;
+}
+.page-wrapper header{
+    height: 60px;
+    width: 1360px;
+    background-color:#0a1e29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.page-wrapper header li,a,button{
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.page-wrapper header .logo-header a{
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.page-wrapper .nav-container .navbar_links{
+    list-style: none;
+   
+}
+.page-wrapper header .navbar_links li{
+    display:inline-block;
+    padding: 0px 20px;
+    
+}
+.page-wrapper header  .navbar_links li a{
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+   
+}
+.page-wrapper header .navbar_links li a:hover{
+    color: #00b0ff;
+}
+
+.page-wrapper header .contact-btn button{
+     padding: 9px 25px;
+     background-color: #00b0ff;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+} 
+.page-wrapper header .contact-btn button:hover{
+    background-color:  #0089c9;
+ 
+}
+
+/***************HeaderSection Style End**************/
+
+/***************Login Section style Start**************/
+
+
+
+
+
+
+
+
+/***************Login Section Style End**************/
+/***************Footer Section Style Start**************/
+/*.page-wrapper footer{
+    height: 70px;
+    width: 1350px;
+    background-color:#0a1e29;
+    padding: 20px 10%;
+} */
+
+/*clock section css */
+
+  .box{
+    width: 320px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+ }
+ 
+ .box .heading{
+    background: #3498db;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: "Rubik";
+ }
+ 
+ .faqs{
+    padding: 0px 20px 20px;
+ }
+ 
+ ::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+ }
+ 
+ details{
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Rubik";
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ 
+ details summary{
+    outline: none;
+ }
+/* Sevice policy box starts from here */
+/*cent is used to set the service box in it's position*/
+
+  /*Animation text starts from here*/
+  .cont {
+    height: 10vh;
+    color: white;
+    /*display: flex;*/
+    justify-content: top;
+    align-items: center;
+    /*font-family: 'Poppins',sans-serif ;*/
+    font: normal 36px 'Cookie', cursive;
+
+  }
+  .cont p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .cont p span.typed-text {
+    font-weight: normal;
+    color: rgb(253, 250, 250);
+    /*font-family: 'Poppins',sans-serif ;*/
+    font: normal 36px 'Cookie', cursive;
+  }
+  .cont p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .cont p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+  
+
+
+ 
+ 
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: fixed;
+	bottom: 0;
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: #06141b;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #faf9f8;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #1cb2e0;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #c2c7c7;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #0a1e29;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+.con{
+  height: 80px;
+  width: 1360px;
+  background-color:#03a9f4;
+}
