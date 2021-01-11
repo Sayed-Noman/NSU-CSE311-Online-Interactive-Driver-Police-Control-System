@@ -1,4 +1,7 @@
 ## CSE311-Online-Interactive-Driver-Police-Control-System
+##### Course Code: CSE311 (Database System)
+##### This Project was a part of CSE311L at North South University . This Project was developed by I (Sayed Noman) along with my two other group-mates Zahid and Tawfiq.
+
 # “Online Interactive Driver-Police Control System”
 ### Introduction:
 Online Driver-Police Interactive Control System is an idea to bring together all drivers and traffic polices under one digital platform and control them by one higher authority. This Interactive System will be a Web Browser based application. This will be a multi user control system based application namely-Driver, Police and Admin. Where it’s user will be allowed to make a request to join this platform and accepted members by the admin will be able to see their current status on the website. Drivers will be given a certain points and the points will decrease based around their actions and Admin will have the higher power to judge them whether drivers are eligible to drive or not. Traffic Police will have the authority to check validation papers submit case against any driver connected to the system. Admin will hold the highest authority here and will decide whether a driver or a police is eligible to stay or not.
