@@ -15,4 +15,11 @@ The main objective of the development of the project is to build a website using
 HTML(Hypertext Markup Language), CSS(Cascading  Style and Sheets) and Java Script will be used to design the Frontend which will help to display designed documents in web browser. SQL(Standard Query Language) will be used to design the Backend and  SQL will work as a DDL(Data Definition Language) and DML(Data Manipulation Language) to create  Databases and manage them. PHP(Personal Home Page) will be used create Connection between frontend and backend. 
 The main purpose of this project is to increase transparency between a driver and a police and decreasing the level of harassment Driver-police face maintaining traffic rules in a digital way.
 
-
+### Few Screen-shots of webpages:
+<img src="screenshots/homepage.png">
+<img src="screenshots/contact_page.png">
+<img src="screenshots/driver_login_page.png">
+<img src="screenshots/registration_page.png">
+<img src="screenshots/forget_password_page.png">
+<img src="screenshots/request_accept_page.png">
+<img src="screenshots/info_page.png">
